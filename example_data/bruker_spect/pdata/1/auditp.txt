@@ -1,0 +1,25 @@
+##TITLE= Audit trail, XWIN-NMR		Version 3.5
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH
+##OWNER= mcmahola
+$$ /opt/xwinnmr/data/mcmahola/nmr/glycerol-10mm/1/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, WHAT)
+(   1,<2015-01-30 15:35:52.45 -0800>,<mcmahola>,<bruker85.dom.uab.edu>,
+      <created by zg, POWCHK disabled, PULCHK disabled
+       configuration hash MD5:
+       91 69 BC D8 27 91 F6 A9 8C 06 2D 7E CE 61 6D CD
+       data hash MD5: 16K
+       5A FC 8D C6 3A E9 B6 DC 54 05 D1 7B 97 C2 20 85>)
+(   2,<2015-01-30 15:39:54.77 -0800>,<mcmahola>,<bruker85.dom.uab.edu>,
+      <Start of raw data processing
+       ft FT_mod = 6 PKNL = 1 SI = 16K 
+       data hash MD5: 16K
+       AC 76 E1 07 FF 98 2F B7 D8 A0 CB 37 57 E2 9E 02>)
+(   3,<2015-01-30 15:39:56.60 -0800>,<mcmahola>,<bruker85.dom.uab.edu>,
+      <pk PHC0 = 39.93492 PHC1 = -295.5997 
+       data hash MD5: 16K
+       22 83 71 DF DB 6F 40 03 2F D2 9E DC 4D E8 BE 0D>)
+##END=
+
+$$ hash MD5
+$$ B2 76 3A 8A 8B 9D B7 C8 27 CF BF F6 0D 68 B2 98

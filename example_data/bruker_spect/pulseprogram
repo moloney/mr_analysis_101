@@ -1,0 +1,178 @@
+# 1 "/opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi"
+;zgpr-no-phase-cycling  presat on D2 rather than D1
+; but phase alternate saturation pulse
+;avance-version (02/05/31)
+;1D sequence with f1 presaturation
+
+
+# 1 "/opt/xwinnmr/exp/stan/nmr/lists/pp/Avance.incl" 1
+;Avance.incl
+;
+;avance-version (03/02/17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;$Id: Avance1.incl,v 1.7.2.3 2003/02/25 14:48:47 ber Exp $
+# 7 "/opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi" 2
+
+
+
+
+"d12=20u"
+
+
+# 1 "mc_line 14 file /opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi expanding definition part of mc command before ze"
+define delay MCWRK
+define delay MCREST
+"MCWRK = 0.500000*30m"
+"MCREST = 30m - 30m"
+# 14 "/opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi"
+1 ze
+# 1 "mc_line 14 file /opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi expanding definition of mc command after ze"
+# 15 "/opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi"
+# 1 "mc_line 15 file /opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi expanding start label for mc command"
+2 MCWRK  * 2
+LBLF0, MCREST
+# 16 "/opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi"
+  d1
+  d12 pl9:f1
+  d2 cw:f1 ph29
+  4u do:f1
+  d12 pl1:f1
+  p1 ph1
+  go=2 ph31
+# 1 "mc_line 23 file /opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi expanding mc command in line"
+  MCWRK wr #0
+  MCWRK zd 
+  lo to LBLF0 times td0
+
+# 24 "/opt/xwinnmr/exp/stan/nmr/lists/pp/zgprnophi"
+exit
+
+
+ph1= 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ph29=0 2 0 2 0 2 0 2 0 2 0 2 0 2
+ph31=0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+
+;pl1 : f1 channel - power level for pulse (default)
+;pl9 : f1 channel - power level for presaturation
+;p1 : f1 channel -  90 degree high power pulse
+;d1 : relaxation delay; 1-5 * T1
+;d12: delay for power switching                      [20 usec]
+;NS: 1 * n, total number of scans: NS * TD0
+
+
+
+;$Id: zgpr,v 1.7 2002/06/12 09:05:24 ber Exp $

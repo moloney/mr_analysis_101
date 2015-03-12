@@ -1,0 +1,44 @@
+
+Current Data Parameters
+NAME      glycerol-10mm                
+EXPNO                 1                
+PROCNO                1                
+
+F2 - Acquisition Parameters
+Date_          20150130                
+Time              15.35                
+INSTRUM           spect                
+PROBHD   5 mm Multinucl                
+PULPROG       zgprnophi                
+TD                16384                
+SOLVENT         Acetone                
+NS                   16                
+DS                    0                
+SWH            4310.345 Hz             
+FIDRES         0.263083 Hz             
+AQ            1.9007100 sec            
+RG                   10                
+DW              116.000 usec           
+DE               198.86 usec           
+TE                297.2 K              
+D1           1.00000000 sec            
+D2           4.00000000 sec            
+d12          0.00002000 sec            
+MCREST       0.00000000 sec            
+MCWRK        0.01500000 sec            
+
+======== CHANNEL f1 ========
+NUC1                 1H                
+P1                 3.00 usec           
+PL1                1.16 dB             
+PL9               60.00 dB             
+SFO1        360.1220059 MHz            
+
+F2 - Processing parameters
+SI                16384                
+SF          360.1202775 MHz            
+WDW                  no                
+SSB                   0                
+LB                 0.00 Hz             
+GB                    0                
+PC                 1.00                
